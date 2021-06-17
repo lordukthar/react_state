@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# react_state
+
+>>>>>>> 1b44a59092ad70fde642e034a45eee4e1c88230e
 Different state handling
 
 Number 1
