@@ -1,8 +1,25 @@
-<<<<<<< HEAD
-=======
-# react_state
+This project shows how to handle state in three different ways and adss react query to show how you can use cached data.
 
->>>>>>> 1b44a59092ad70fde642e034a45eee4e1c88230e
+
+- Counter.jsx single component, useState
+- Lifting state up (just passing a method reference) see CountDisplay.jsx and CounterLift.jsx
+- Use React context, see AppContext.jsx, CountDisplayC.jsx and CounterC.jsx 
+    Notice the huge difference between 2 and 3. The context hides the lifting of state and you do not need to pass along method references.
+    
+    
+    This is the skeleton of Lifting State
+      <CountDisplay count={count} />
+      <CounterLift count={count} onIncrementClick={increment} />
+      
+    This is the skeleton code of context, notice the difference?
+     <CountProvider>
+          <CounterC />
+          <CountDisplayC />
+        </CountProvider>
+        
+        No params are passed along.
+        
+        
 Different state handling
 
 Number 1
